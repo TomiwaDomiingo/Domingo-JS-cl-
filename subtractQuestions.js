@@ -13,7 +13,7 @@ let minuend = Math.max(num1, num2);
 let subtrahend = Math.min(num1, num2);
 let answer = minuend - subtrahend;
 let userAttempt = 2;
-console.log(`Question ${question}: ${minuend} - ${subtrahend} = ?`);
+console.log(`Question ${question}: ${minuend} - ${subtrahend} =`);
 
 while(userAttempt > 0){
 let userResult = Number(prompt('What is your answer: '));
@@ -22,11 +22,14 @@ if(userResult != userResult)
 continue;}
 
 
-if(userResult == answer) {console.log('You are correct'); 
-return score + 1;}
-else {userAttempt = userAttempt - 1; 
-if(userAttempt > 0) {
-console.log('You have one try left');}
+if(userResult == answer){
+console.log('You are correct'); 
+return score + 1;
+}else{
+userAttempt = userAttempt - 1; 
+if(userAttempt > 0){
+console.log('You have one try left');
+}
 
 return score;
 }
