@@ -17,9 +17,10 @@ console.log(`Question ${question}: ${minuend} - ${subtrahend} =`);
 
 while(userAttempt > 0){
 let userResult = Number(prompt('What is your answer: '));
-if(userResult != userResult) 
-{console.log('Enter a number.'); 
-continue;}
+if(userResult != userResult){
+console.log('Enter a number.'); 
+continue;
+}
 
 
 if(userResult == answer){
