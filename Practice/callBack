@@ -1,0 +1,10 @@
+functiom higherfunction(){
+    console.log("")
+
+}
+
+function lowerfunction(callBack){
+    console.log("")
+callBackk()
+}
+lowerfunction
